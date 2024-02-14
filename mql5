@@ -1,0 +1,110 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                          Trend Chief mt5         |
+//|                      Developer's site - forexroboteasy.com        |
+//|                      Development - Forex Robot Easy Team          |
+//|                                                                  |
+//|                        Terms of Reference                         |
+//|                                                                  |
+//| 1. Develop an advanced indicator algorithm for Trend Chief MT5    |
+//|    that effectively filters out market noise in the Forex        |
+//|    trading sphere.                                               |
+//| 2. Implement functionality that allows the software to identify   |
+//|    significant market trends and eliminate irrelevant data,       |
+//|    enabling traders to focus on important trading decisions.      |
+//| 3. Create a feature that identifies potential entry and exit      |
+//|    points in the Forex market, aiding traders in timing their     |
+//|    trades effectively.                                           |
+//| 4. Develop scalable and swing trading capabilities for Trend      |
+//|    Chief MT5, allowing traders to adapt their trading strategies  |
+//|    to different market conditions.                                |
+//| 5. Ensure that the code adheres to best practices and industry    |
+//|    standards for Forex trading software development.              |
+//| 6. Optimize the code for performance and efficiency, taking into  |
+//|    consideration the fast-paced nature of Forex trading.          |
+//| 7. Test the code thoroughly to ensure the accuracy and reliability|
+//|    of the indicators and functionalities implemented.             |
+//| 8. Provide clear and concise documentation for the code,          |
+//|    including comments and explanations to assist future developers|
+//|    in understanding and maintaining the software.                 |
+//| 9. Collaborate with the product team to gather requirements and   |
+//|    feedback, and make necessary adjustments to the code based on  |
+//|    user needs and market trends.                                  |
+//| 10. Deliver the completed code within the agreed upon timeline,   |
+//|     addressing any bug fixes or issues that may arise during the  |
+//|     testing and implementation phase.                             |
+//+------------------------------------------------------------------+
+
+// Main function
+void OnStart()
+{
+    // Filter out market noise
+    double filteredData = FilterMarketNoise();
+
+    // Identify significant market trends
+    bool isTrend = IdentifyTrend(filteredData);
+
+    if (isTrend)
+    {
+        // Identify potential entry and exit points
+        double entryPoint = IdentifyEntryPoint(filteredData);
+        double exitPoint = IdentifyExitPoint(filteredData);
+
+        // Implement trading strategies based on market conditions
+        if (IsScalableMarket())
+        {
+            ScalableTrading(entryPoint, exitPoint);
+        }
+        else
+        {
+            SwingTrading(entryPoint, exitPoint);
+        }
+    }
+}
+
+// Filter out market noise
+double FilterMarketNoise()
+{
+    // Implementation logic goes here
+    return 0.0;
+}
+
+// Identify significant market trends
+bool IdentifyTrend(double data)
+{
+    // Implementation logic goes here
+    return true;
+}
+
+// Identify potential entry point
+double IdentifyEntryPoint(double data)
+{
+    // Implementation logic goes here
+    return 0.0;
+}
+
+// Identify potential exit point
+double IdentifyExitPoint(double data)
+{
+    // Implementation logic goes here
+    return 0.0;
+}
+
+// Check if market is scalable
+bool IsScalableMarket()
+{
+    // Implementation logic goes here
+    return true;
+}
+
+// Implement scalable trading strategy
+void ScalableTrading(double entryPoint, double exitPoint)
+{
+    // Implementation logic goes here
+}
+
+// Implement swing trading strategy
+void SwingTrading(double entryPoint, double exitPoint)
+{
+    // Implementation logic goes here
+}
